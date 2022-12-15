@@ -17,9 +17,9 @@ form.addEventListener("submit", function (event) {
     while (x < list.length) {
 
         let item = document.createElement("li");
-        item.innerHTML = list[x];
+        item.innerText = list[x];
         pasteElement.append(item);
-        x++;
         item.classList.add("list-group-item")
+        x++;
     }
 })
